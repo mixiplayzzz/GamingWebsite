@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+    url('/static/images/bgmi_bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+h1{
+    color:#00e5ff;
+    margin-top:30px;
+}
+
+p{
+    color:#cccccc;
+}
+
+button{
+    width:220px;
+    padding:15px;
+    margin:10px;
+    border:none;
+    border-radius:12px;
+    background:#00bcd4;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#0097a7;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>{{ level }}</h1>
+
+<img src="/static/sensitivity/Non-Gyro/nongyro_camera.jpg" width="300">
+
+<img src="/static/sensitivity/Non-Gyro/nongyro_ads.jpg" width="300">
+
+<br>
+
+<a href="/sensitivity">Back</a>
+
+</body>
+</html>

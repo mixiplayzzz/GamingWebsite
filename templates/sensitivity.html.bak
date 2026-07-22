@@ -1,0 +1,28 @@
+<h1>BGMI Sensitivity Settings</h1>
+
+<h2>High Sensitivity</h2>
+<img src="/static/sensitivity/High/high_camera.png" width="300">
+<img src="/static/sensitivity/High/high_ads.png" width="300">
+<img src="/static/sensitivity/High/high_gyro.png" width="300">
+<img src="/static/sensitivity/High/high_gyro_ads.png" width="300">
+
+
+<h2>Medium Sensitivity</h2>
+<img src="/static/sensitivity/Medium/medium_camera.png" width="300">
+<img src="/static/sensitivity/Medium/medium_ads.png" width="300">
+<img src="/static/sensitivity/Medium/medium_gyro.png" width="300">
+<img src="/static/sensitivity/Medium/medium_gyro_ads.png" width="300">
+
+
+<h2>Low Sensitivity</h2>
+<img src="/static/sensitivity/Low/low_camera.png" width="300">
+<img src="/static/sensitivity/Low/low_ads.png" width="300">
+<img src="/static/sensitivity/Low/low_gyro.png" width="300">
+<img src="/static/sensitivity/Low/low_gyro_ads.png" width="300">
+
+
+<<<h2>Non Gyro Sensitivity</h2>
+
+<img src="/static/sensitivity/Non-Gyro/nongyro_camera.jpg" width="300">
+
+<img src="/static/sensitivity/Non-Gyro/nongyro_ads.jpg" width="300">

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ level }} Sensitivity</title>
+
+<style>
+body{
+    background:#0b0b0b;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+}
+
+h1{
+    color:#00e5ff;
+}
+
+.box{
+    background:#171717;
+    padding:20px;
+    margin:20px auto;
+    width:90%;
+    border-radius:20px;
+}
+
+img{
+    width:90%;
+    max-width:400px;
+    margin:10px;
+    border-radius:15px;
+}
+
+a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🎯 {{ level }} Sensitivity</h1>
+
+<div class="box">
+
+{% if level == "High" %}
+
+<img src="/static/sensitivity/High/high_camera.PNG">
+<img src="/static/sensitivity/High/high_ads.PNG">
+<img src="/static/sensitivity/High/high_gyro.PNG">
+<img src="/static/sensitivity/High/high_gyro_ads.PNG">
+
+{% elif level == "Medium" %}
+
+<img src="/static/sensitivity/Medium/medium_camera.PNG">
+<img src="/static/sensitivity/Medium/medium_ads.PNG">
+<img src="/static/sensitivity/Medium/medium_gyro.PNG">
+<img src="/static/sensitivity/Medium/medium_gyro_ads.PNG">
+
+{% elif level == "Low" %}
+
+<img src="/static/sensitivity/Low/low_camera.PNG">
+<img src="/static/sensitivity/Low/low_ads.PNG">
+<img src="/static/sensitivity/Low/low_gyro.PNG">
+<img src="/static/sensitivity/Low/low_gyro_ads.PNG">
+
+{% elif level == "non gyro" %}
+
+<img src="/static/sensitivity/Non-Gyro/nongyro_camera.jpg">
+<img src="/static/sensitivity/Non-Gyro/nongyro_ads.jpg">
+
+{% endif %}
+
+</div>
+
+<a href="/sensitivity">⬅ Back</a>
+
+</body>
+</html>

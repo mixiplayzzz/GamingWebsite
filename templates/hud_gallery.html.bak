@@ -1,0 +1,113 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<title>{{ finger }} HUD</title>
+
+<style>
+body{
+    background:#0b0b0b;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+}
+
+h1{
+    color:#00e5ff;
+    text-shadow:0 0 10px #00e5ff;
+}
+
+.card{
+    width:90%;
+    margin:20px auto;
+    padding:20px;
+    background:#171717;
+    border-radius:20px;
+    box-shadow:0 0 20px #00e5ff;
+}
+
+img{
+    width:95%;
+    max-width:450px;
+    border-radius:15px;
+    border:2px solid #00e5ff;
+    box-shadow:0 0 15px #00e5ff;
+    transition:0.3s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+.back{
+    display:inline-block;
+    margin:20px;
+    padding:12px 25px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+}
+#viewer{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.95);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#fullImage{
+    max-width:95%;
+    max-height:95%;
+    border-radius:15px;
+    border:none;
+    box-shadow:none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎮 {{ finger }} HUD</h1>
+
+<div class="card">
+
+{% if finger == "2finger" %}
+<img src="/static/hud/2finger/2_finger.jpg" onclick="openImage(this.src)">
+
+{% elif finger == "3finger" %}
+<img src="/static/hud/3finger/3_finger.jpg" onclick="openImage(this.src)">
+
+{% elif finger == "4finger" %}
+<img src="/static/hud/4finger/4_finger.jpg" onclick="openImage(this.src)">
+
+{% elif finger == "5finger" %}
+<img src="/static/hud/5finger/5_finger.jpg" onclick="openImage(this.src)">
+
+{% endif %}
+
+</div>
+<a id="downloadBtn" class="back" download>⬇ Download HUD</a>
+<br><br>
+<a href="/hud" class="back">⬅ Back</a>
+<div id="viewer" onclick="closeImage()">
+    <img id="fullImage">
+</div>
+
+<script>
+function openImage(src){
+    document.getElementById("viewer").style.display = "flex";
+    document.getElementById("fullImage").src = src;
+}
+
+function closeImage(){
+    document.getElementById("viewer").style.display = "none";
+}
+</script>
+</body>
+</html>
